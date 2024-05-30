@@ -15,7 +15,7 @@ gen_classifier = load_model(r'genmodel3.h5')
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
 gender_labels = ['Male', 'Female']
 
-# Define the camera capture frame function, including preprocessing and age/gender predictions
+# Defining a function that preprocesses and predicts a frame
 def process_and_predict(file):
     im = Image.open(file)
     width, height = im.size
