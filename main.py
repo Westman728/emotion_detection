@@ -6,10 +6,10 @@ from keras.utils import img_to_array
 from PIL import Image
 
 # Set up local filepaths
-face_classifier = cv2.CascadeClassifier(r'C:/Users/rwest/Desktop/DS23/Deep Learning/kunskapskontroll_2/haarcascade_frontalface_default.xml')
-classifier = load_model(r'C:/Users/rwest/Desktop/DS23/Deep Learning/kunskapskontroll_2/emomodel.h5')
-age_classifier = load_model(r'C:/Users/rwest/Desktop/DS23/Deep Learning/kunskapskontroll_2/agemodel2.h5')
-gen_classifier = load_model(r'C:/Users/rwest/Desktop/DS23/Deep Learning/kunskapskontroll_2/genmodel3.h5')
+face_classifier = cv2.CascadeClassifier(r'haarcascade_frontalface_default.xml')
+classifier = load_model(r'emomodel.h5')
+age_classifier = load_model(r'agemodel2.h5')
+gen_classifier = load_model(r'genmodel3.h5')
 
 # Set up labels
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Neutral', 'Sad', 'Surprise']
